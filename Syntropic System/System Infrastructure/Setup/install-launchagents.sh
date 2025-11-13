@@ -6,7 +6,7 @@ set -e  # Exit on error
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VAULT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
-LAUNCHAGENT_DIR="$VAULT_DIR/Scripts/launchagents"
+LAUNCHAGENT_DIR="$VAULT_DIR/Syntropic System/System Infrastructure/LaunchAgents"
 TARGET_DIR="$HOME/Library/LaunchAgents"
 
 echo "================================================"

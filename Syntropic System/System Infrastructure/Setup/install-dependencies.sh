@@ -6,7 +6,7 @@ set -e  # Exit on error
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VAULT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
-CONFIG_DIR="$VAULT_DIR/Config"
+CONFIG_DIR="$VAULT_DIR/Syntropic System/System Infrastructure/Config"
 
 echo "================================================"
 echo "Installing Dependencies"

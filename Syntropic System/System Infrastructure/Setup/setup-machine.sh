@@ -69,7 +69,7 @@ mkdir -p "$LOG_DIR"
 echo "✓ Created log directory: $LOG_DIR"
 
 # Ensure wrapper script is executable
-WRAPPER_SCRIPT="$VAULT_DIR/Scripts/automation/daily-brief-runner.sh"
+WRAPPER_SCRIPT="$VAULT_DIR/Syntropic System/1. Executive & Portfolio Management/Automation/daily-brief-runner.sh"
 if [ -f "$WRAPPER_SCRIPT" ]; then
     chmod +x "$WRAPPER_SCRIPT"
     echo "✓ Security wrapper script is executable"
@@ -94,9 +94,9 @@ echo ""
 # Check for required directories
 REQUIRED_DIRS=(
     ".claude/commands"
-    "Scripts/automation"
-    "Scripts/launchagents"
-    "Config"
+    "Syntropic System/System Infrastructure"
+    "Syntropic System/1. Executive & Portfolio Management"
+    "Syntropic System/System Infrastructure/Config"
     "Contacts/LinkedIn"
     "Daily"
     ".cache/logs"
@@ -114,10 +114,10 @@ echo ""
 
 # Check for required files
 REQUIRED_FILES=(
-    "Scripts/automation/daily-brief-runner.sh"
-    "Scripts/automation/generate_daily_brief.py"
-    "Scripts/launchagents/com.obsidian.dailybrief.plist"
-    "Docs/SECURITY.md"
+    "Syntropic System/1. Executive & Portfolio Management/Automation/daily-brief-runner.sh"
+    "Syntropic System/1. Executive & Portfolio Management/Automation/generate_daily_brief.py"
+    "Syntropic System/System Infrastructure/LaunchAgents/com.obsidian.dailybrief.plist"
+    "Syntropic System/Documentation/SECURITY.md"
 )
 
 echo "Checking required files..."
@@ -209,18 +209,19 @@ Next Steps:
    ... and 19 more commands!
 
 5. Weekly PAI update check (run every Friday):
-   bash Scripts/automation/check-pai-updates.sh
+   bash "Syntropic System/7. Automation & System Orchestration/Automation/check-pai-updates.sh"
 
 Documentation:
-  • Security guide: Docs/SECURITY.md
-  • Full setup guide: Scripts/AUTOMATION-SETUP.md
-  • Portability guide: Docs/PORTABILITY.md
-  • Command reference: .claude/commands/
+  • System Overview: Syntropic System/INDEX.md
+  • Security guide: Syntropic System/Documentation/SECURITY.md
+  • Full setup guide: Syntropic System/Documentation/AUTOMATION-SETUP.md
+  • Portability guide: Syntropic System/Documentation/PORTABILITY.md
+  • Command reference: .claude/commands/ or Syntropic System/[Categories]/Commands/
 
 Security:
   • Audit logs: .cache/logs/security-audit.log
   • Daily logs: .cache/logs/daily-brief-*.log
-  • See Docs/SECURITY.md for security features
+  • See Syntropic System/Documentation/SECURITY.md for security features
 
 Your automation will run at 5:00 AM PT every weekday.
 First automated brief: Tomorrow morning!
