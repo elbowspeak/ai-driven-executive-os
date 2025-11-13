@@ -2,8 +2,6 @@
 
 A portable, AI-powered system for executive operations, portfolio management, and network intelligence built with Claude Code and Obsidian.
 
-> **⚠️ IMPORTANT:** This is a **personal operating system** containing my private setup and workflows. This repository shares the **automation scripts and architecture** for others to adapt, NOT my personal data. Do not clone this vault directly - see Installation section below.
-
 ---
 
 ## 🎯 What This Is
@@ -75,39 +73,37 @@ This system integrates concepts and patterns from **Daniel Miessler's Personal A
 
 ### Installation
 
-**⚠️ This is a personal operating system repository - not meant for direct cloning!**
-
-**To adapt for your own use:**
-
-1. **Fork this repository**
-   - Fork on GitHub to create your own version
-   - Clone scripts and setup files only
-   - Add your own data via Obsidian
-
-2. **Or copy setup scripts manually**
+1. **Clone or fork this repository**
    ```bash
-   # Create your own vault
-   mkdir -p ~/Documents/Obsidian\ Vault/YourVaultName
-
-   # Copy setup files from this repo
-   # Adapt Scripts/, Config/, and Docs/ for your needs
+   cd ~/Documents/Obsidian\ Vault
+   git clone https://github.com/elbowspeak/ai-driven-executive-os.git YourVaultName
+   cd YourVaultName
    ```
 
-3. **Run setup in YOUR vault**
+2. **Run one-command setup**
    ```bash
-   cd ~/Documents/Obsidian\ Vault/YourVaultName
-   bash Scripts/setup/setup-machine.sh
+   bash "Syntropic System/System Infrastructure/Setup/setup-machine.sh"
    ```
 
-3. **Security & Permissions** (Optional - see [SECURITY.md](Docs/SECURITY.md))
+   This will:
+   - Install required dependencies (Python packages, Fabric)
+   - Set up daily automation (LaunchAgents)
+   - Configure environment and validate installation
+
+3. **Security & Permissions** (Optional - see [Documentation/SECURITY.md](Documentation/SECURITY.md))
    - Vault-only access recommended (no Full Disk Access needed)
    - If automation doesn't work: System Settings → Privacy & Security → Full Disk Access → Add `/bin/bash`
-   - See `Docs/SECURITY.md` for detailed security information
+   - See `Documentation/SECURITY.md` for detailed security information
 
 4. **Test automation**
    ```bash
    launchctl start com.obsidian.dailybrief
    ```
+
+5. **Explore the system**
+   - Start with `INDEX.md` for complete overview
+   - Browse categories by function (1-7)
+   - Run `/daily` or `/weekly` to test commands
 
 ---
 
@@ -298,7 +294,11 @@ See `Docs/PORTABILITY.md` for detailed guide.
 
 ## 🤝 Contributing
 
-This is a personal operating system repository. Feel free to fork and adapt for your own use!
+Contributions are welcome! Feel free to:
+- Fork and adapt for your own use
+- Submit pull requests with improvements
+- Share interesting extensions or integrations
+- Report issues or suggest features
 
 If you build interesting extensions or integrations, especially with PAI features, please share them back to the community.
 
