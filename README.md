@@ -17,6 +17,19 @@ An executive operating system that combines:
 
 Built on [Obsidian](https://obsidian.md) with [Claude Code](https://claude.ai/claude-code) and inspired by [Daniel Miessler's Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure).
 
+### 📋 **[Complete Feature Catalog →](FEATURES.md)**
+
+**23 production-ready commands** and **15 specialized AI skills** organized across:
+- Executive & Portfolio Management
+- Competitive Intelligence & Market Research
+- Product & Innovation
+- Network & Relationship Intelligence
+- Consulting & Client Management
+- Marketing & Communications
+- Automation & System Orchestration
+
+See **[FEATURES.md](FEATURES.md)** for the full capabilities catalog.
+
 ---
 
 ## 🙏 Attribution
@@ -38,29 +51,51 @@ This system integrates concepts and patterns from **Daniel Miessler's Personal A
 
 ## ✨ Features
 
-### Automation
-- **Daily Briefs** - Automated prioritization at 5 AM weekdays
-- **Weekly Reviews** - Comprehensive weekly analysis and planning
-- **Portfolio Updates** - Track 7 portfolio companies
-- **LaunchAgent Setup** - macOS automation with Full Disk Access
+### 🎯 Executive Operations
+- **Daily Briefs** - AI-generated prioritization with portfolio attention items at 5 AM weekdays
+- **Weekly Reviews** - Comprehensive weekly analysis with portfolio health scoring and planning
+- **Meeting Prep** - Intelligence prep with context, talking points, and agenda suggestions
+- **Portfolio Management** - Multi-company tracking with health scoring and board prep
+- **Investment Memos** - Generate detailed memos with thesis, risks, and recommendations
 
-### Network Intelligence
-- **LinkedIn Import** - Import and search thousands of contacts
-- **Relationship Tracking** - Manage connections with metadata
-- **Smart Queries** - Find founders, investors, experts by criteria
-- **Network Analysis** - Identify patterns and opportunities
+### 🔬 Competitive Intelligence & Market Research
+- **Enterprise-Grade Analysis** - 519-line competitive analysis framework with 15-section reports
+- **Head-to-Head Comparisons** - Detailed competitor comparison tables and positioning
+- **Threat Assessment** - Scoring frameworks for investment attractiveness and competitive threats
+- **Market Mapping** - Create competitive landscape maps with positioning analysis
+- **Intelligence Gathering** - Strategic research with signal detection and momentum tracking
+- **Fabric AI Integration** - 242+ AI patterns for research and content analysis
 
-### Research & Analysis
-- **Fabric Integration** - 242+ AI patterns for content analysis
-- **Market Research** - Structured research templates
-- **Competitive Analysis** - Automated competitor tracking
-- **Saved Queries** - Build a searchable knowledge base
+### 🤝 Network Intelligence
+- **LinkedIn Import** - Successfully imported and searchable database (4,939+ contacts tested)
+- **Smart Queries** - Find founders, investors, experts by role, company, expertise
+- **Relationship Health** - Score relationship strength and identify dormant connections
+- **Connection Mapping** - Discover synergies and warm intro paths across network
+- **Customer Opportunities** - Match portfolio companies to potential customers in network
 
-### Portable Setup
-- **One-Command Install** - `bash Scripts/setup/setup-machine.sh`
-- **Auto-Detection** - Handles different usernames/paths
-- **Sync-Friendly** - Works with Obsidian Sync across machines
-- **Self-Documenting** - Complete setup and usage guides
+### 💡 Product & Innovation
+- **Idea Validation** - Market research, competitive analysis, and feasibility assessment
+- **Idea Matching** - Connect ideas to portfolio companies or investment opportunities
+- **Product Strategy** - PRD creation, roadmap planning, feature prioritization
+- **UX Research** - User research frameworks and usability analysis
+
+### 💼 Consulting & Business Operations
+- **Project Tracking** - Multi-client status reports and deliverable monitoring
+- **Client Updates** - Automated update emails with progress, blockers, and next steps
+- **Time Tracking** - Billable hour calculation and overdue invoice detection
+- **Business Analysis** - Requirements gathering, process optimization, ROI analysis
+
+### 🤖 AI Skills & Automation
+- **15 Specialized Skills** - CEO/CTO Advisors, Product Strategists, Competitive Analysts, Market Researchers, and more
+- **Multi-Agent Orchestration** - Coordinate multiple AI agents for complex workflows
+- **Event-Driven Hooks** - Notifications via macOS, email, or Slack
+- **Automated Saves** - Build searchable knowledge base with offer-to-save workflow
+
+### 🔐 Security & Portability
+- **Production-Ready Security** - Input sanitization, path validation, audit logging
+- **Vault-Only Access** - No Full Disk Access required
+- **One-Command Setup** - `bash Scripts/setup/setup-machine.sh`
+- **Multi-Machine Sync** - Obsidian Sync for seamless cross-machine operation
 
 ---
 
@@ -200,16 +235,30 @@ fabric --pattern summarize_paper < paper.txt
 ```
 
 ### Available Commands
+
+**23 Production-Ready Commands:**
 ```
 /daily                    - Generate daily prioritization brief
 /weekly                   - Weekly review and planning
+/competitive-analysis     - 519-line enterprise framework
 /research [topic]         - AI-powered research
 /find-connections [query] - Network intelligence search
 /portfolio-update         - Portfolio company analysis
-... and 19 more!
+/investment-memo          - Generate investment memos
+/idea-validate            - Validate product ideas
+/prep-meeting             - Meeting intelligence prep
+... and 14 more!
 ```
 
-See `.claude/commands/` for full command reference.
+**15 Specialized AI Skills:**
+- CEO Advisor, CTO Advisor
+- Product Manager, Product Strategist, UX Researcher
+- Competitive Analyst, Market Researcher, Business Analyst
+- Content Marketer, Internal Comms
+- Agent Organizer, Context Manager, Skill Creator
+- And more...
+
+**See [FEATURES.md](FEATURES.md) for complete catalog with detailed descriptions.**
 
 ---
 
@@ -287,6 +336,7 @@ See `Docs/PORTABILITY.md` for detailed guide.
 
 ## 📚 Documentation
 
+- **[FEATURES.md](FEATURES.md)** - Complete feature catalog (23 commands + 15 skills)
 - **[PORTABILITY.md](Docs/PORTABILITY.md)** - Multi-machine setup guide
 - **[PAI-INTEGRATION.md](Docs/PAI-INTEGRATION.md)** - Integrated PAI features
 - **[WORKFLOWS.md](Docs/WORKFLOWS.md)** - Usage patterns and best practices
