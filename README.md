@@ -1,37 +1,66 @@
-# AI-Driven Executive Operating System (Template)
+# AI-Driven Executive Operating System
 
-A portable, AI-powered template for building your own executive operating system with Claude Code and Obsidian.
+A portable, AI-powered system for executive operations, portfolio management, and network intelligence built with Claude Code and Obsidian.
 
-> **📋 This is a TEMPLATE repository** - Fork or clone this to create your own personalized AI operating system. This contains the automation scripts, setup tools, and architecture patterns, NOT personal data.
+> **⚠️ IMPORTANT:** This is a **personal operating system** containing my private setup and workflows. This repository shares the **automation scripts and architecture** for others to adapt, NOT my personal data. Do not clone this vault directly - see Installation section below.
 
 ---
 
-## 🎯 What You Get
+## 🎯 What This Is
 
-### Automation Framework
-- **Daily automation** - Generate personalized daily briefs at 5 AM
-- **Network intelligence** - Import and query LinkedIn contacts
-- **Portfolio management** - Track companies, investments, consulting
-- **Research automation** - AI-powered market research with Fabric
-- **Security-first** - Input sanitization, audit logging, vault-only access
+An executive operating system that combines:
+- **Daily automation** - Automated daily briefs at 5 AM
+- **Network intelligence** - Searchable contact database with relationship management
+- **Portfolio management** - Track and analyze portfolio companies
+- **Research automation** - AI-powered market research and analysis
+- **Portable setup** - One-command deployment on any machine
 
-### Built With
-- **[Obsidian](https://obsidian.md)** - Knowledge management & data storage
-- **[Claude Code](https://claude.ai/claude-code)** - AI-powered automation
-- **[Fabric](https://github.com/danielmiessler/fabric)** - 242+ AI patterns (by Daniel Miessler)
-- **Python & Bash** - Automation scripts
-- **macOS LaunchAgents** - Scheduled execution
+Built on [Obsidian](https://obsidian.md) with [Claude Code](https://claude.ai/claude-code) and inspired by [Daniel Miessler's Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure).
 
 ---
 
 ## 🙏 Attribution
 
-This system integrates concepts from **Daniel Miessler's Personal AI Infrastructure** (PAI):
-- **[Fabric AI Framework](https://github.com/danielmiessler/fabric)** - AI pattern library
-- **Hooks system** - Event-driven automation
-- **Weekly update checker** - Stay current with PAI developments
+This system integrates concepts and patterns from **Daniel Miessler's Personal AI Infrastructure** (PAI):
 
-**Thank you to Daniel Miessler** ([@DanielMiessler](https://twitter.com/DanielMiessler)) for pioneering Personal AI Infrastructure.
+### Integrated from PAI:
+- **[Fabric](https://github.com/danielmiessler/fabric)** - 242+ AI patterns for research and content analysis
+- **Hooks system** - Event-driven automation for notifications
+- **Weekly update checker** - Monitor PAI repository for new features
+- **Automation patterns** - Daily/weekly workflows
+
+**Thank you to Daniel Miessler** ([@DanielMiessler](https://twitter.com/DanielMiessler)) for pioneering the Personal AI Infrastructure concept and making it open source. His work on Fabric and AI automation workflows has been invaluable.
+
+**PAI Repository:** https://github.com/danielmiessler/Personal_AI_Infrastructure
+**Fabric Framework:** https://github.com/danielmiessler/fabric
+
+---
+
+## ✨ Features
+
+### Automation
+- **Daily Briefs** - Automated prioritization at 5 AM weekdays
+- **Weekly Reviews** - Comprehensive weekly analysis and planning
+- **Portfolio Updates** - Track 7 portfolio companies
+- **LaunchAgent Setup** - macOS automation with Full Disk Access
+
+### Network Intelligence
+- **LinkedIn Import** - Import and search thousands of contacts
+- **Relationship Tracking** - Manage connections with metadata
+- **Smart Queries** - Find founders, investors, experts by criteria
+- **Network Analysis** - Identify patterns and opportunities
+
+### Research & Analysis
+- **Fabric Integration** - 242+ AI patterns for content analysis
+- **Market Research** - Structured research templates
+- **Competitive Analysis** - Automated competitor tracking
+- **Saved Queries** - Build a searchable knowledge base
+
+### Portable Setup
+- **One-Command Install** - `bash Scripts/setup/setup-machine.sh`
+- **Auto-Detection** - Handles different usernames/paths
+- **Sync-Friendly** - Works with Obsidian Sync across machines
+- **Self-Documenting** - Complete setup and usage guides
 
 ---
 
@@ -39,283 +68,300 @@ This system integrates concepts from **Daniel Miessler's Personal AI Infrastruct
 
 ### Prerequisites
 - macOS (tested on Sequoia)
-- [Obsidian](https://obsidian.md) installed
+- [Obsidian](https://obsidian.md) with Sync enabled
 - [Homebrew](https://brew.sh)
 - Python 3.8+
 - [Claude Code CLI](https://docs.claude.com/claude-code)
 
 ### Installation
 
-**1. Fork or Clone This Template**
+**⚠️ This is a personal operating system repository - not meant for direct cloning!**
 
-```bash
-cd ~/Documents/Obsidian\ Vault/
-git clone https://github.com/YOUR-USERNAME/ai-executive-os-template.git YourVaultName
-cd YourVaultName
+**To adapt for your own use:**
+
+1. **Fork this repository**
+   - Fork on GitHub to create your own version
+   - Clone scripts and setup files only
+   - Add your own data via Obsidian
+
+2. **Or copy setup scripts manually**
+   ```bash
+   # Create your own vault
+   mkdir -p ~/Documents/Obsidian\ Vault/YourVaultName
+
+   # Copy setup files from this repo
+   # Adapt Scripts/, Config/, and Docs/ for your needs
+   ```
+
+3. **Run setup in YOUR vault**
+   ```bash
+   cd ~/Documents/Obsidian\ Vault/YourVaultName
+   bash Scripts/setup/setup-machine.sh
+   ```
+
+3. **Security & Permissions** (Optional - see [SECURITY.md](Docs/SECURITY.md))
+   - Vault-only access recommended (no Full Disk Access needed)
+   - If automation doesn't work: System Settings → Privacy & Security → Full Disk Access → Add `/bin/bash`
+   - See `Docs/SECURITY.md` for detailed security information
+
+4. **Test automation**
+   ```bash
+   launchctl start com.obsidian.dailybrief
+   ```
+
+---
+
+## 📁 Structure
+
+```
+Doikayt/
+├── .claude/
+│   ├── commands/              # 24 slash commands
+│   └── hooks/                 # Automation hooks
+│
+├── Scripts/
+│   ├── setup/                 # Portable setup system
+│   │   ├── setup-machine.sh
+│   │   ├── install-dependencies.sh
+│   │   └── install-launchagents.sh
+│   │
+│   ├── automation/            # Automation scripts
+│   │   ├── generate-daily-brief.sh
+│   │   ├── generate_daily_brief.py
+│   │   ├── import-linkedin-contacts.py
+│   │   ├── check-pai-updates.sh
+│   │   └── network-query.sh
+│   │
+│   └── launchagents/          # LaunchAgent plists
+│       └── com.obsidian.dailybrief.plist
+│
+├── Config/
+│   ├── dependencies.txt       # Python packages
+│   └── tools.txt              # Brew packages (includes Fabric)
+│
+├── Docs/
+│   ├── PORTABILITY.md         # Setup guide
+│   ├── PAI-INTEGRATION.md     # PAI features
+│   └── WORKFLOWS.md           # Usage patterns
+│
+├── Contacts/LinkedIn/         # Contact database (not in repo)
+├── Daily/                     # Daily briefs (not in repo)
+├── Weekly/                    # Weekly reviews (not in repo)
+├── Research/                  # Research reports (not in repo)
+└── Network/Queries/           # Network queries (not in repo)
 ```
 
-**2. Open in Obsidian**
+---
 
-- Open Obsidian
-- Open folder as vault → Select `YourVaultName`
-- (Optional) Enable Obsidian Sync for multi-machine setup
+## 🎓 Usage
 
-**3. Run Setup**
+### Daily Workflow
+```bash
+# Automated at 5 AM, or run manually:
+launchctl start com.obsidian.dailybrief
 
+# View today's brief
+open Daily/$(date +%Y-%m-%d).md
+```
+
+### Weekly Review
+```
+# In Claude Code:
+/weekly
+
+# Includes:
+# - Past week analysis
+# - Portfolio health
+# - PAI update check
+# - Next week planning
+```
+
+### Network Intelligence
+```bash
+# Generate network overview
+bash Scripts/automation/network-query.sh overview
+
+# Find specific contacts
+bash Scripts/automation/network-query.sh founders AI
+bash Scripts/automation/network-query.sh company "Microsoft"
+bash Scripts/automation/network-query.sh keyword "cybersecurity"
+```
+
+### Research with Fabric
+```bash
+# Extract insights from articles
+curl -s https://example.com/article | fabric --pattern extract_wisdom
+
+# Analyze claims
+cat research.txt | fabric --pattern analyze_claims
+
+# Summarize papers
+fabric --pattern summarize_paper < paper.txt
+```
+
+### Available Commands
+```
+/daily                    - Generate daily prioritization brief
+/weekly                   - Weekly review and planning
+/research [topic]         - AI-powered research
+/find-connections [query] - Network intelligence search
+/portfolio-update         - Portfolio company analysis
+... and 19 more!
+```
+
+See `.claude/commands/` for full command reference.
+
+---
+
+## 🔧 Configuration
+
+### Notification Setup
+
+Configure hooks for daily brief notifications:
+
+```bash
+# macOS notifications (default)
+export NOTIFICATION_METHOD="osascript"
+
+# Email
+export NOTIFICATION_METHOD="email"
+export EMAIL_RECIPIENT="you@example.com"
+
+# Slack webhook
+export NOTIFICATION_METHOD="slack"
+export SLACK_WEBHOOK_URL="https://hooks.slack.com/..."
+```
+
+See `.claude/hooks/README.md` for details.
+
+### Fabric Configuration
+
+Fabric is installed via Homebrew and requires API setup:
+
+```bash
+# After installation
+fabric --setup
+
+# Configure your preferred AI provider (OpenAI, Anthropic, etc.)
+```
+
+---
+
+## 📊 PAI Integration Status
+
+### Completed
+- ✅ Fabric AI (242+ patterns)
+- ✅ Hooks system
+- ✅ Weekly PAI update checker
+- ✅ Enhanced research workflows
+
+### Planned
+- [ ] Multi-agent orchestration
+- [ ] Advanced TypeScript hooks
+- [ ] Skills system
+- [ ] Context compression
+
+See `Docs/PAI-INTEGRATION.md` for full integration details.
+
+---
+
+## 🔄 Portability
+
+This system is designed to be fully portable:
+
+### One Machine Setup
 ```bash
 bash Scripts/setup/setup-machine.sh
 ```
 
-This will:
-- Install dependencies (Python packages, Fabric, etc.)
-- Create log directories
-- Set up security wrapper
-- Install LaunchAgents for automation
-- Guide you through permissions
+### Multi-Machine Sync
+1. Set up on first machine
+2. Enable Obsidian Sync
+3. Wait for sync to complete
+4. Run setup script on other machines
+5. All data, scripts, and configs sync automatically
 
-**4. Test Automation**
-
-```bash
-# Test daily brief generation
-Scripts/automation/daily-brief-runner.sh
-
-# Check the output
-cat Daily/$(date +%Y-%m-%d).md
-
-# Verify security logs
-cat .cache/logs/security-audit.log
-```
-
-**5. Add Your Data**
-
-Now populate with your own information:
-- Import LinkedIn contacts: `python3 Scripts/automation/import-linkedin-contacts.py <path-to-csv>`
-- Add portfolio companies to `Portfolio Companies/`
-- Customize `.claude/commands/` for your workflows
+See `Docs/PORTABILITY.md` for detailed guide.
 
 ---
 
-## 📁 What's Included
+## 📚 Documentation
 
-### Core Infrastructure
-```
-├── Scripts/
-│   ├── setup/                    # One-command machine setup
-│   ├── automation/               # Daily briefs, contact import, etc.
-│   └── maintenance/              # Template sync utilities
-│
-├── Config/
-│   ├── dependencies.txt          # Python packages
-│   └── tools.txt                 # Brew packages (including Fabric)
-│
-├── Docs/
-│   ├── SECURITY.md               # Security architecture
-│   ├── PORTABILITY.md            # Multi-machine setup
-│   └── WORKFLOWS.md              # Usage patterns
-│
-├── .claude/
-│   ├── commands/                 # Slash commands for Claude Code
-│   └── hooks/                    # Automation hooks
-│
-└── [Empty placeholder directories for your data]
-```
-
-### Security Features
-- ✅ Input sanitization (blocks command injection)
-- ✅ Path validation (vault-only access)
-- ✅ Restricted execution environment
-- ✅ Comprehensive audit logging
-- ✅ No Full Disk Access required
-
----
-
-## ✨ Features
-
-### Daily Automation
-- Automated daily briefs at 5 AM (weekdays)
-- Portfolio company health tracking
-- Network relationship monitoring
-- Consulting/revenue work reminders
-- Energy-based task prioritization
-
-### Network Intelligence
-- Import 1000s of LinkedIn contacts
-- Query by role, company, expertise
-- Find founders, investors, experts
-- Warm intro path mapping
-- Relationship health scoring
-
-### Research & Analysis
-- Fabric AI patterns (242+ available)
-- Web research with Claude
-- Market analysis
-- Competitive intelligence
-- Citation tracking
-
-### Portable Setup
-- One setup script works on any machine
-- Obsidian Sync keeps data synchronized
-- Auto-detects machine-specific paths
-- Git for scripts, Obsidian for data
-
----
-
-## 🔒 Security & Privacy
-
-### What This Template Includes
-✅ Scripts and automation (generic)
-✅ Documentation
-✅ Configuration templates
-✅ Empty directory structure
-
-### What YOU Add (Not in Template)
-❌ Your personal contacts
-❌ Your daily briefs
-❌ Your portfolio data
-❌ Your research notes
-❌ API keys or credentials
-
-**See `.gitignore`** - Personal data directories are excluded by default.
-
-**See `Docs/SECURITY.md`** - Comprehensive security documentation.
-
----
-
-## 📖 Documentation
-
-- **[SECURITY.md](Docs/SECURITY.md)** - Security architecture and threat mitigation
 - **[PORTABILITY.md](Docs/PORTABILITY.md)** - Multi-machine setup guide
+- **[PAI-INTEGRATION.md](Docs/PAI-INTEGRATION.md)** - Integrated PAI features
 - **[WORKFLOWS.md](Docs/WORKFLOWS.md)** - Usage patterns and best practices
+- **[SECURITY.md](Docs/SECURITY.md)** - Security architecture and threat mitigation
 - **[AUTOMATION-SETUP.md](Scripts/AUTOMATION-SETUP.md)** - Detailed automation guide
-
----
-
-## 🔄 Keeping Your Fork Updated
-
-When new features are added to this template:
-
-```bash
-# Add original template as upstream
-git remote add upstream https://github.com/elbowspeak/ai-executive-os-template.git
-
-# Fetch updates
-git fetch upstream
-
-# Merge updates (review carefully!)
-git merge upstream/main
-
-# Or cherry-pick specific commits
-git cherry-pick <commit-hash>
-```
+- **[Hooks README](.claude/hooks/README.md)** - Notification configuration
 
 ---
 
 ## 🤝 Contributing
 
-Found a bug or have an enhancement idea?
+This is a personal operating system repository. Feel free to fork and adapt for your own use!
 
-1. Fork this repository
-2. Create a feature branch
-3. Make your changes (ensure no personal data included!)
-4. Submit a pull request
-
-**Share back improvements to:**
-- Setup scripts
-- Security features
-- Documentation
-- New automation patterns
-- Claude commands
+If you build interesting extensions or integrations, especially with PAI features, please share them back to the community.
 
 ---
 
-## 💡 Customization Ideas
+## 🔐 Privacy & Security
 
-### Extend This Template
-- Add calendar integration (MCP server)
-- Email notification system
-- Slack/Discord webhooks
-- Custom slash commands for your workflow
-- Integration with your CRM/tools
-- Mobile notifications
-- Weekly/monthly reporting
+### Security Features
 
-### Adapt for Different Use Cases
-- **Investor OS** - Focus on deal flow, portfolio tracking
-- **Consultant OS** - Client management, time tracking, invoicing
-- **Founder OS** - Company metrics, hiring, fundraising
-- **Research OS** - Paper analysis, literature review, citations
+- **Input sanitization** - Protects against prompt injection attacks
+- **Path validation** - Restricts access to vault directory only
+- **Restricted execution** - Limited permissions and environment
+- **Audit logging** - Comprehensive security event tracking
+- **No Full Disk Access required** - Vault-only access is sufficient
 
----
+See **[SECURITY.md](Docs/SECURITY.md)** for complete security documentation.
 
-## 🎯 Example Workflows
+### Privacy
 
-### Daily Morning Routine
-1. Wake up to automated daily brief (generated at 5 AM)
-2. Review top 3 priorities
-3. Check portfolio company updates
-4. See network relationship actions
+**What's in this repo:**
+- ✅ Setup scripts (generic)
+- ✅ Documentation
+- ✅ Configuration templates
+- ✅ Automation patterns
 
-### Adding a New Feature
-1. Create new script in `Scripts/automation/`
-2. Test in your personal vault
-3. Add to template: `bash Scripts/maintenance/sync-to-template.sh`
-4. Push to your fork
-5. (Optional) Submit PR to share with community
+**What's NOT in this repo:**
+- ❌ Personal contacts
+- ❌ Daily briefs
+- ❌ Portfolio company data
+- ❌ Research notes
+- ❌ API keys or credentials
 
-### Research Session
-1. Use `/research [topic]` command
-2. Fabric patterns extract insights
-3. Results saved to `Research/`
-4. Link to relevant portfolio companies
-5. Track action items
-
----
-
-## 🐛 Troubleshooting
-
-### Setup Script Fails
-- Check Prerequisites are installed
-- Verify Homebrew is working: `brew --version`
-- Check Python version: `python3 --version`
-
-### Automation Not Running
-- Verify LaunchAgent: `launchctl list | grep dailybrief`
-- Check logs: `cat .cache/logs/launchagent-error.log`
-- Test manually: `Scripts/automation/daily-brief-runner.sh`
-
-### Permission Errors
-- See `Docs/SECURITY.md` for permission options
-- Vault-only access recommended (no Full Disk Access needed)
-- Check audit logs: `cat .cache/logs/security-audit.log`
-
----
-
-## 📝 License
-
-MIT License - Feel free to fork, adapt, and build upon this template for your own use.
+See `.gitignore` for full exclusion list.
 
 ---
 
 ## 🙌 Acknowledgments
 
-**Primary Inspiration:**
-- **Daniel Miessler** - [@DanielMiessler](https://twitter.com/DanielMiessler)
-  - [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure)
-  - [Fabric AI Framework](https://github.com/danielmiessler/fabric)
+### Primary Inspiration
+**Daniel Miessler** - [@DanielMiessler](https://twitter.com/DanielMiessler)
+- [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure)
+- [Fabric AI Framework](https://github.com/danielmiessler/fabric)
+- Weekly patterns and automation concepts
 
-**Technology Stack:**
-- [Obsidian](https://obsidian.md) - Knowledge management
-- [Claude Code](https://claude.ai/claude-code) - AI automation
-- [Fabric](https://github.com/danielmiessler/fabric) - AI patterns
-- [Anthropic Claude](https://anthropic.com) - AI assistant
+### Technology Stack
+- **[Obsidian](https://obsidian.md)** - Knowledge management platform
+- **[Claude Code](https://claude.ai/claude-code)** - AI-powered development
+- **[Fabric](https://github.com/danielmiessler/fabric)** - AI pattern framework
+- **[Anthropic Claude](https://anthropic.com)** - AI assistant powering automation
 
 ---
 
-## 📮 Questions?
+## 📝 License
 
-- **Issues:** Open an issue in this repository
-- **Discussions:** Use GitHub Discussions for questions
-- **PAI Questions:** Refer to [Daniel Miessler's PAI repository](https://github.com/danielmiessler/Personal_AI_Infrastructure)
+MIT License - Feel free to use and adapt for your own needs.
+
+---
+
+## 📮 Contact
+
+For questions or discussions about this system, feel free to open an issue.
+
+For PAI-related questions, please refer to [Daniel Miessler's PAI repository](https://github.com/danielmiessler/Personal_AI_Infrastructure).
 
 ---
 

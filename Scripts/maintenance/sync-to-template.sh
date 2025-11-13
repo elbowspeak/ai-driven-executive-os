@@ -83,6 +83,7 @@ copy_dir "$PERSONAL_VAULT/Scripts" "$TEMPLATE_REPO/Scripts" "Scripts"
 copy_dir "$PERSONAL_VAULT/Config" "$TEMPLATE_REPO/Config" "Config"
 copy_dir "$PERSONAL_VAULT/Docs" "$TEMPLATE_REPO/Docs" "Docs"
 copy_dir "$PERSONAL_VAULT/.claude" "$TEMPLATE_REPO/.claude" "Claude Commands & Hooks"
+copy_dir "$PERSONAL_VAULT/Claude Code" "$TEMPLATE_REPO/Claude Code" "Claude Skills"
 
 # Copy root files
 copy_file "$PERSONAL_VAULT/README.md" "$TEMPLATE_REPO/README.md" "README"
