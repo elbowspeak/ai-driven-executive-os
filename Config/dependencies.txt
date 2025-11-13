@@ -1,0 +1,11 @@
+# Python Dependencies
+# Install with: pip3 install -r dependencies.txt
+
+# Core dependencies (already in use)
+# None currently - standard library only
+
+# Future dependencies (when integrating PAI features)
+# requests>=2.31.0        # For API calls
+# pyyaml>=6.0            # For YAML parsing
+# beautifulsoup4>=4.12.0 # For web scraping
+# playwright>=1.40.0     # For browser automation (optional)

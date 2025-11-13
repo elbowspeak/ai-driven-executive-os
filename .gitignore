@@ -1,0 +1,33 @@
+# Personal Data - DO NOT COMMIT
+Contacts/
+Daily/
+Weekly/
+Network/Queries/
+Research/
+Portfolio Companies/
+Biz Dev/
+
+# Cache and logs
+.cache/
+*.log
+
+# API Keys and Credentials
+.env
+*credentials*
+*secrets*
+*api-keys*
+
+# Obsidian
+.obsidian/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Personal notes
+*-personal-*
+*-private-*

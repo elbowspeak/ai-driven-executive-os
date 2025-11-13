@@ -1,0 +1,14 @@
+# External Tools/Packages
+# Install with: brew install <package>
+
+# Currently required for PAI integration
+fabric-ai           # Daniel Miessler's Fabric (242+ AI patterns)
+
+# Optional tools
+# gh                  # GitHub CLI (already installed)
+# jq                  # JSON processor (for API responses)
+
+# Optional enhancements
+# ripgrep            # Fast search (rg command)
+# fd                 # Fast find alternative
+# bat                # Better cat with syntax highlighting
