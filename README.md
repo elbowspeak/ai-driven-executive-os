@@ -2,7 +2,7 @@
 
 A portable, AI-powered system for executive operations, portfolio management, and network intelligence built with Claude Code and Obsidian.
 
-> **⚠️ IMPORTANT:** This is a **personal operating system** containing my private setup and workflows. This repository shares the **automation scripts and architecture** for others to adapt, NOT my personal data. Do not clone this vault directly - see Installation section below.
+> **⚠️ IMPORTANT:** This is a **personal operating system** containing **automation scripts and architecture** for others to adapt. Do not clone this vault directly - see Installation section below.
 
 ---
 
@@ -34,7 +34,7 @@ See **[FEATURES.md](FEATURES.md)** for the full capabilities catalog.
 
 ## 🙏 Attribution
 
-This system integrates concepts and patterns from **Daniel Miessler's Personal AI Infrastructure** (PAI):
+This system integrates concepts and patterns from **Daniel Miessler's Personal AI Infrastructure** (PAI) and Daniel Larson's Feed the Beast
 
 ### Integrated from PAI:
 - **[Fabric](https://github.com/danielmiessler/fabric)** - 242+ AI patterns for research and content analysis
@@ -42,7 +42,7 @@ This system integrates concepts and patterns from **Daniel Miessler's Personal A
 - **Weekly update checker** - Monitor PAI repository for new features
 - **Automation patterns** - Daily/weekly workflows
 
-**Thank you to Daniel Miessler** ([@DanielMiessler](https://twitter.com/DanielMiessler)) for pioneering the Personal AI Infrastructure concept and making it open source. His work on Fabric and AI automation workflows has been invaluable.
+**Thank you to Daniel Miessler** ([@DanielMiessler](https://twitter.com/DanielMiessler)) for pioneering the Personal AI Infrastructure concept and making it open source. His work on Fabric and AI automation workflows has been invaluable. Also big thanks to Derek Larson (https://github.com/derek-larson14/feed-the-beast) for clarifying the use case concept.
 
 **PAI Repository:** https://github.com/danielmiessler/Personal_AI_Infrastructure
 **Fabric Framework:** https://github.com/danielmiessler/fabric
@@ -374,13 +374,6 @@ See **[SECURITY.md](Docs/SECURITY.md)** for complete security documentation.
 - ✅ Configuration templates
 - ✅ Automation patterns
 
-**What's NOT in this repo:**
-- ❌ Personal contacts
-- ❌ Daily briefs
-- ❌ Portfolio company data
-- ❌ Research notes
-- ❌ API keys or credentials
-
 See `.gitignore` for full exclusion list.
 
 ---
@@ -416,3 +409,4 @@ For PAI-related questions, please refer to [Daniel Miessler's PAI repository](ht
 ---
 
 **Built with [Claude Code](https://claude.ai/claude-code) • Powered by [Fabric](https://github.com/danielmiessler/fabric) • Inspired by [PAI](https://github.com/danielmiessler/Personal_AI_Infrastructure)**
+
