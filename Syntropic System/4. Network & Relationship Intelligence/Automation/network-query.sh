@@ -2,9 +2,9 @@
 # Network Intelligence Query Tool
 # Runs queries on LinkedIn contacts and saves results to vault
 
-VAULT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+VAULT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
 CONTACTS_DIR="$VAULT_DIR/Contacts/LinkedIn"
-QUERIES_DIR="$VAULT_DIR/Network/Queries"
+QUERIES_DIR="$VAULT_DIR/Consulting/Biz Dev/Network/Queries"
 DATE=$(date +%Y-%m-%d)
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 

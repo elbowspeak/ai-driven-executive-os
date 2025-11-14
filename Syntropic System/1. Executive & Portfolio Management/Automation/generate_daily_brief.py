@@ -18,8 +18,8 @@ import logging
 
 # Configuration
 VAULT_PATH = Path("/Users/elbowspeak1/Documents/Obsidian Vault/Doikayt")
-DAILY_FOLDER = VAULT_PATH / "Daily"
-PORTFOLIO_FOLDER = VAULT_PATH / "Biz Dev" / "Encoded Portfolio Companies"
+DAILY_FOLDER = VAULT_PATH / "Work" / "Daily"
+PORTFOLIO_FOLDER = VAULT_PATH / "Consulting" / "Biz Dev" / "Encoded Portfolio Companies"
 CONSULTING_FOLDER = VAULT_PATH / "Consulting"
 CONTACTS_FOLDER = VAULT_PATH / "Contacts"  # Will be created when contacts imported
 LOG_DIR = VAULT_PATH / ".cache" / "logs"
@@ -191,7 +191,7 @@ def generate_daily_brief():
     priorities = []
 
     # Priority 1: EncodedVC if materials exist
-    encodedvc_file = VAULT_PATH / "Biz Dev" / "EncodedVC_Value_Proposition.md"
+    encodedvc_file = VAULT_PATH / "Consulting" / "Biz Dev" / "EncodedVC_Value_Proposition.md"
     if encodedvc_file.exists():
         priorities.append({
             "title": "Finalize EncodedVC Meeting Preparation",
