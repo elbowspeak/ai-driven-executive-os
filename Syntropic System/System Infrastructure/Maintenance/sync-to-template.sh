@@ -134,10 +134,9 @@ EOF
 }
 
 # Create only framework-essential placeholders
-# Work/, Knowledge/, and Personal/ folders are created by users as they use the system
+# User-specific folders (Work/, Knowledge/, Personal/, Consulting/) are created
+# organically as users implement the system for their specific needs
 create_placeholder "Contacts/LinkedIn" "Your imported LinkedIn contacts will be stored here"
-create_placeholder "Consulting/Biz Dev/Encoded Portfolio Companies" "Portfolio company tracking and analysis"
-create_placeholder "Consulting/Biz Dev/Network/Queries" "Network intelligence query results"
 
 echo ""
 echo -e "${BLUE}Checking for changes...${NC}"
