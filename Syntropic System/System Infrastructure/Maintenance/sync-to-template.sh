@@ -133,20 +133,11 @@ EOF
     echo -e "${GREEN}  ✓ Created placeholder: $dir${NC}"
 }
 
+# Create only framework-essential placeholders
+# Work/, Knowledge/, and Personal/ folders are created by users as they use the system
 create_placeholder "Contacts/LinkedIn" "Your imported LinkedIn contacts will be stored here"
-create_placeholder "Work/Daily" "Daily briefs generated each weekday morning"
-create_placeholder "Work/Weekly" "Weekly review summaries"
-create_placeholder "Work/Monthly" "Monthly planning and reviews"
-create_placeholder "Work/Ideas" "Product and business ideas"
-create_placeholder "Work/Projects" "Active projects"
-create_placeholder "Work/Tasks" "Todo lists and task tracking"
 create_placeholder "Consulting/Biz Dev/Encoded Portfolio Companies" "Portfolio company tracking and analysis"
 create_placeholder "Consulting/Biz Dev/Network/Queries" "Network intelligence query results"
-create_placeholder "Knowledge/Research" "Research reports and market analysis"
-create_placeholder "Knowledge/Articles" "Saved articles and publications"
-create_placeholder "Knowledge/Clippings" "Web clippings and highlights"
-create_placeholder "Knowledge/Content" "Created content"
-create_placeholder "Personal" "Personal notes and documents"
 
 echo ""
 echo -e "${BLUE}Checking for changes...${NC}"
