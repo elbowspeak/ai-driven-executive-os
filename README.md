@@ -106,6 +106,12 @@ This system integrates concepts and patterns from **Daniel Miessler's Personal A
 - Python 3.8+
 - [Claude Code CLI](https://docs.claude.com/claude-code)
 
+### Installation Process
+- Install Claude Code
+- Go to console.anthropic.com, get an API key, add it to Claude Code so it will run
+- Install Obsidian, then set up a vault
+- Then point Claude Code at this repo and ask it help you install and set it up
+
 ### Installation
 
 1. **Clone or fork this repository**
@@ -409,4 +415,5 @@ For PAI-related questions, please refer to [Daniel Miessler's PAI repository](ht
 ---
 
 **Built with [Claude Code](https://claude.ai/claude-code) • Powered by [Fabric](https://github.com/danielmiessler/fabric) • Inspired by [PAI](https://github.com/danielmiessler/Personal_AI_Infrastructure)**
+
 
