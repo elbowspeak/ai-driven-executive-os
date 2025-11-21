@@ -6,7 +6,7 @@ Your daily operating system. Run each morning to get focused priorities and cont
 
 When the user runs `/daily`, generate a comprehensive daily brief with prioritized focus areas and **save it as a file**.
 
-**File Location:** `/Users/elbowspeak1/Documents/Obsidian Vault/Doikayt/Daily/YYYY-MM-DD.md`
+**File Location:** `Daily/YYYY-MM-DD.md` (in vault root)
 
 **Important:** Always use the Write tool to create the daily brief file so the user can reference it in Obsidian throughout the day.
 
@@ -95,7 +95,7 @@ Good morning! Here's your focus for today.
 - [Company]: Board meeting [Date] - prep needed
 - [Company]: Update overdue (last: [date])
 
-**All Clear:** ConfigHub, DataFlint, IPXO [or whatever companies don't need attention]
+**All Clear:** [List companies not needing attention]
 
 ---
 
@@ -271,7 +271,7 @@ Based on patterns, suggest:
 ## Important Notes
 
 - Keep brief focused - max 3 top priorities
-- Be specific with actions ("Email John about XORQ intro" not "Follow up with contacts")
+- Be specific with actions ("Email John about Acme intro" not "Follow up with contacts")
 - Estimate time to help with planning
 - Provide context reminders (what was last discussed, why it matters)
 - Adapt tone to day of week (Monday = planning, Wednesday = execution, Friday = wrapping)
